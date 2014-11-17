@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>78C6EE51-451D-4B3C-9AE9-B9B5E3738C27</string>
+	<key>IDESourceControlProjectName</key>
+	<string>bowlingapp</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>FAB2AA501FBDC103E2E4C6EEDF6B385EEA344813</key>
+		<string>https://github.com/phanikavi/wildcats.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>bowlingapp/bowlingapp.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>FAB2AA501FBDC103E2E4C6EEDF6B385EEA344813</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/phanikavi/wildcats.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>FAB2AA501FBDC103E2E4C6EEDF6B385EEA344813</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>FAB2AA501FBDC103E2E4C6EEDF6B385EEA344813</string>
+			<key>IDESourceControlWCCName</key>
+			<string>wildcats</string>
+		</dict>
+	</array>
+</dict>
+</plist>

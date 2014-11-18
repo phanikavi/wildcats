@@ -18,37 +18,35 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6sI-fD-FS6">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Single">
+                                <state key="normal" title="Single Player Play Game">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="149" y="116" width="234" height="30"/>
-                                </variation>
                                 <connections>
                                     <segue destination="3ky-qH-LWr" kind="show" id="nqt-Y7-Pc4"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yUO-6M-uh7">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Group ">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="149" y="318" width="234" height="30"/>
-                                </variation>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="6sI-fD-FS6" secondAttribute="centerY" id="Ghr-3l-eyt"/>
+                            <constraint firstAttribute="centerX" secondItem="6sI-fD-FS6" secondAttribute="centerX" id="vc5-B1-fG4"/>
+                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="6sI-fD-FS6"/>
-                                <exclude reference="yUO-6M-uh7"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Ghr-3l-eyt"/>
+                                <exclude reference="vc5-B1-fG4"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular">
                             <mask key="subviews">
                                 <include reference="6sI-fD-FS6"/>
-                                <include reference="yUO-6M-uh7"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Ghr-3l-eyt"/>
+                                <include reference="vc5-B1-fG4"/>
                             </mask>
                         </variation>
                     </view>
@@ -67,6 +65,7 @@
                         <viewControllerLayoutGuide type="bottom" id="eBG-k0-MKU"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="0Am-em-D9M">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Player Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3pi-2V-GF8">
@@ -119,6 +118,7 @@
                         <viewControllerLayoutGuide type="bottom" id="xiX-FC-13B"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="eBe-6D-fBW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Play Game" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TTF-Nx-Vzn">
@@ -171,6 +171,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Xuw-Nn-A5K"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="R8l-t0-rC1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End Game" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VEk-6t-eMX">

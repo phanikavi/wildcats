@@ -19,6 +19,12 @@
 		29DDA3481A1B8D6E009E27B3 /* PlayerInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29DDA3471A1B8D6E009E27B3 /* PlayerInfoViewController.m */; };
 		29DDA34B1A1B8D99009E27B3 /* PlayGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29DDA34A1A1B8D99009E27B3 /* PlayGameViewController.m */; };
 		29DDA34E1A1B8DE4009E27B3 /* FinalScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29DDA34D1A1B8DE4009E27B3 /* FinalScoreViewController.m */; };
+		A92F7A4D1A1BA56800E41959 /* blowling_lane_middle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A92F7A471A1BA56800E41959 /* blowling_lane_middle.jpg */; };
+		A92F7A4E1A1BA56800E41959 /* Blue_bowling_ball.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A92F7A481A1BA56800E41959 /* Blue_bowling_ball.jpg */; };
+		A92F7A4F1A1BA56800E41959 /* Bowling-pin-single-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A92F7A491A1BA56800E41959 /* Bowling-pin-single-2.jpg */; };
+		A92F7A501A1BA56800E41959 /* Bowling-pins-10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A92F7A4A1A1BA56800E41959 /* Bowling-pins-10.jpg */; };
+		A92F7A511A1BA56800E41959 /* bowling_lane_layout.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A92F7A4B1A1BA56800E41959 /* bowling_lane_layout.jpg */; };
+		A92F7A521A1BA56800E41959 /* Bowling_pin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A92F7A4C1A1BA56800E41959 /* Bowling_pin.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +60,12 @@
 		29DDA34A1A1B8D99009E27B3 /* PlayGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayGameViewController.m; sourceTree = "<group>"; };
 		29DDA34C1A1B8DE4009E27B3 /* FinalScoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinalScoreViewController.h; sourceTree = "<group>"; };
 		29DDA34D1A1B8DE4009E27B3 /* FinalScoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinalScoreViewController.m; sourceTree = "<group>"; };
+		A92F7A471A1BA56800E41959 /* blowling_lane_middle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blowling_lane_middle.jpg; sourceTree = "<group>"; };
+		A92F7A481A1BA56800E41959 /* Blue_bowling_ball.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Blue_bowling_ball.jpg; sourceTree = "<group>"; };
+		A92F7A491A1BA56800E41959 /* Bowling-pin-single-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Bowling-pin-single-2.jpg"; sourceTree = "<group>"; };
+		A92F7A4A1A1BA56800E41959 /* Bowling-pins-10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Bowling-pins-10.jpg"; sourceTree = "<group>"; };
+		A92F7A4B1A1BA56800E41959 /* bowling_lane_layout.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bowling_lane_layout.jpg; sourceTree = "<group>"; };
+		A92F7A4C1A1BA56800E41959 /* Bowling_pin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Bowling_pin.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +131,7 @@
 		29DDA3171A1A8F78009E27B3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A92F7A461A1BA56700E41959 /* images */,
 				29DDA3181A1A8F78009E27B3 /* Info.plist */,
 				29DDA3191A1A8F78009E27B3 /* main.m */,
 			);
@@ -141,6 +154,19 @@
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
+		};
+		A92F7A461A1BA56700E41959 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				A92F7A471A1BA56800E41959 /* blowling_lane_middle.jpg */,
+				A92F7A481A1BA56800E41959 /* Blue_bowling_ball.jpg */,
+				A92F7A491A1BA56800E41959 /* Bowling-pin-single-2.jpg */,
+				A92F7A4A1A1BA56800E41959 /* Bowling-pins-10.jpg */,
+				A92F7A4B1A1BA56800E41959 /* bowling_lane_layout.jpg */,
+				A92F7A4C1A1BA56800E41959 /* Bowling_pin.jpg */,
+			);
+			path = images;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -222,9 +248,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A92F7A521A1BA56800E41959 /* Bowling_pin.jpg in Resources */,
 				29DDA3261A1A8F78009E27B3 /* Main.storyboard in Resources */,
+				A92F7A501A1BA56800E41959 /* Bowling-pins-10.jpg in Resources */,
 				29DDA32B1A1A8F78009E27B3 /* LaunchScreen.xib in Resources */,
+				A92F7A4E1A1BA56800E41959 /* Blue_bowling_ball.jpg in Resources */,
+				A92F7A511A1BA56800E41959 /* bowling_lane_layout.jpg in Resources */,
+				A92F7A4D1A1BA56800E41959 /* blowling_lane_middle.jpg in Resources */,
 				29DDA3281A1A8F78009E27B3 /* Images.xcassets in Resources */,
+				A92F7A4F1A1BA56800E41959 /* Bowling-pin-single-2.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

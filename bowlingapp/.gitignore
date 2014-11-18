@@ -1,0 +1,6 @@
+#Ignore iOS-specific files
+.DS_Store
+
+#Ignore Xcode files
+xcuserdata/
+

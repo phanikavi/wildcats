@@ -444,6 +444,7 @@
 				29DDA33C1A1A8F78009E27B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		29DDA33D1A1A8F78009E27B3 /* Build configuration list for PBXNativeTarget "bowlingappTests" */ = {
 			isa = XCConfigurationList;
@@ -452,6 +453,7 @@
 				29DDA33F1A1A8F78009E27B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

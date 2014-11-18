@@ -3,4 +3,4 @@
 
 #Ignore Xcode files
 xcuserdata/
-
+build/

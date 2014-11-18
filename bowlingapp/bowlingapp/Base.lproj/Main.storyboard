@@ -26,17 +26,40 @@
                                     <segue destination="3ky-qH-LWr" kind="show" id="nqt-Y7-Pc4"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bowling-pins-10.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Thw-uy-JCc">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="WNY-bm-CXP"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="WNY-bm-CXP"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="WNY-bm-CXP"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Thw-uy-JCc" secondAttribute="trailing" constant="164" id="2WF-sp-M7n"/>
                             <constraint firstAttribute="centerY" secondItem="6sI-fD-FS6" secondAttribute="centerY" id="Ghr-3l-eyt"/>
+                            <constraint firstItem="Thw-uy-JCc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="55" id="RL8-KL-UXz"/>
+                            <constraint firstItem="Thw-uy-JCc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="164" id="o6e-ah-3Uz"/>
                             <constraint firstAttribute="centerX" secondItem="6sI-fD-FS6" secondAttribute="centerX" id="vc5-B1-fG4"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="6sI-fD-FS6"/>
+                                <exclude reference="Thw-uy-JCc"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="2WF-sp-M7n"/>
+                                <exclude reference="RL8-KL-UXz"/>
+                                <exclude reference="o6e-ah-3Uz"/>
                                 <exclude reference="Ghr-3l-eyt"/>
                                 <exclude reference="vc5-B1-fG4"/>
                             </mask>
@@ -44,8 +67,12 @@
                         <variation key="heightClass=regular">
                             <mask key="subviews">
                                 <include reference="6sI-fD-FS6"/>
+                                <include reference="Thw-uy-JCc"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="2WF-sp-M7n"/>
+                                <include reference="RL8-KL-UXz"/>
+                                <include reference="o6e-ah-3Uz"/>
                                 <include reference="Ghr-3l-eyt"/>
                                 <include reference="vc5-B1-fG4"/>
                             </mask>
@@ -238,4 +265,7 @@
             <point key="canvasLocation" x="-92" y="134.25"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Bowling-pins-10.jpg" width="225" height="225"/>
+    </resources>
 </document>

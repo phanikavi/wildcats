@@ -17,10 +17,14 @@
 @implementation bowlingappScoringTests
 
 - (void)testTotalScore {
+    NSInteger myTestTotal = 9;
+
     Game *aGame = [[Game alloc] init];
     [aGame playGame];
-    NSInteger myTestTotal = 10;
-    XCTAssertEqual(aGame.totalScore, myTestTotal);
+    [aGame rollBall:5];
+    [aGame rollBall:4];
+
+    XCTAssertEqual([aGame calculateTotal], myTestTotal);
 }
 
 

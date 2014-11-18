@@ -15,6 +15,14 @@
 
 @implementation Frame
 
+-(id)init
+{
+    if (self = [super init]) {
+        _firstBall = -1;
+        _secondBall = -1;
+    }
+    return self;
+}
 
 
 @end

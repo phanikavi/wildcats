@@ -10,7 +10,9 @@
 
 @interface Game : NSObject
 
-@property (nonatomic, assign) NSInteger totalScore;
+
 - (void)playGame;
+- (void)rollBall:(NSInteger)pins;
+- (NSInteger)calculateTotal;
 
 @end

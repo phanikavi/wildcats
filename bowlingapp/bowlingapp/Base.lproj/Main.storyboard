@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="umx-ZC-hvi">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Play Mode View Controller-->
@@ -68,39 +69,56 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Player Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3pi-2V-GF8">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="279" y="247" width="143" height="21"/>
-                                </variation>
-                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Player Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NXU-jr-zyt">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="finishedEnteringName:" destination="3ky-qH-LWr" eventType="editingDidEnd" id="M0V-mI-GZ3"/>
+                                </connections>
+                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bgg-LM-c7E">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Play Game">
+                                <state key="normal" title="Start Game">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="277" y="498" width="75" height="30"/>
-                                </variation>
                                 <connections>
                                     <segue destination="Z3K-bf-3d0" kind="show" id="y2r-Of-I3f"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="NXU-jr-zyt" secondAttribute="trailing" constant="80" id="KQs-Im-kBX"/>
+                            <constraint firstItem="NXU-jr-zyt" firstAttribute="leading" secondItem="0Am-em-D9M" secondAttribute="leadingMargin" constant="81" id="eo1-ga-6ws"/>
+                            <constraint firstItem="NXU-jr-zyt" firstAttribute="top" secondItem="Kgh-eD-7GQ" secondAttribute="bottom" constant="181" id="fJ8-dc-3MM"/>
+                            <constraint firstItem="Bgg-LM-c7E" firstAttribute="centerX" secondItem="NXU-jr-zyt" secondAttribute="centerX" id="gKE-I5-OJu"/>
+                            <constraint firstItem="Bgg-LM-c7E" firstAttribute="top" secondItem="NXU-jr-zyt" secondAttribute="bottom" constant="222" id="hCS-6z-Ho8"/>
+                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="3pi-2V-GF8"/>
+                                <exclude reference="NXU-jr-zyt"/>
                                 <exclude reference="Bgg-LM-c7E"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="KQs-Im-kBX"/>
+                                <exclude reference="eo1-ga-6ws"/>
+                                <exclude reference="fJ8-dc-3MM"/>
+                                <exclude reference="gKE-I5-OJu"/>
+                                <exclude reference="hCS-6z-Ho8"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular">
                             <mask key="subviews">
-                                <include reference="3pi-2V-GF8"/>
+                                <include reference="NXU-jr-zyt"/>
                                 <include reference="Bgg-LM-c7E"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="KQs-Im-kBX"/>
+                                <include reference="eo1-ga-6ws"/>
+                                <include reference="fJ8-dc-3MM"/>
+                                <include reference="gKE-I5-OJu"/>
+                                <include reference="hCS-6z-Ho8"/>
                             </mask>
                         </variation>
                     </view>

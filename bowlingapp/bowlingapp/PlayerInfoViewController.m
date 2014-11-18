@@ -8,7 +8,8 @@
 
 #import "PlayerInfoViewController.h"
 
-@interface PlayerInfoViewController ()
+@interface PlayerInfoViewController () <UITextFieldDelegate>
+- (IBAction)finishedEnteringName:(id)sender;
 
 @end
 
@@ -33,5 +34,11 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (IBAction)finishedEnteringName:(id)sender
+{
+    UITextField *name = (UITextField *)sender;
+    [name resignFirstResponder];
+}
 
 @end

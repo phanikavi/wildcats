@@ -15,6 +15,10 @@
 		29DDA3281A1A8F78009E27B3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29DDA3271A1A8F78009E27B3 /* Images.xcassets */; };
 		29DDA32B1A1A8F78009E27B3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29DDA3291A1A8F78009E27B3 /* LaunchScreen.xib */; };
 		29DDA3371A1A8F78009E27B3 /* bowlingappTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 29DDA3361A1A8F78009E27B3 /* bowlingappTests.m */; };
+		29DDA3451A1B8D2B009E27B3 /* PlayModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29DDA3441A1B8D2B009E27B3 /* PlayModeViewController.m */; };
+		29DDA3481A1B8D6E009E27B3 /* PlayerInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29DDA3471A1B8D6E009E27B3 /* PlayerInfoViewController.m */; };
+		29DDA34B1A1B8D99009E27B3 /* PlayGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29DDA34A1A1B8D99009E27B3 /* PlayGameViewController.m */; };
+		29DDA34E1A1B8DE4009E27B3 /* FinalScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29DDA34D1A1B8DE4009E27B3 /* FinalScoreViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +46,14 @@
 		29DDA3301A1A8F78009E27B3 /* bowlingappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bowlingappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		29DDA3351A1A8F78009E27B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29DDA3361A1A8F78009E27B3 /* bowlingappTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = bowlingappTests.m; sourceTree = "<group>"; };
+		29DDA3431A1B8D2B009E27B3 /* PlayModeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayModeViewController.h; sourceTree = "<group>"; };
+		29DDA3441A1B8D2B009E27B3 /* PlayModeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayModeViewController.m; sourceTree = "<group>"; };
+		29DDA3461A1B8D6E009E27B3 /* PlayerInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerInfoViewController.h; sourceTree = "<group>"; };
+		29DDA3471A1B8D6E009E27B3 /* PlayerInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerInfoViewController.m; sourceTree = "<group>"; };
+		29DDA3491A1B8D99009E27B3 /* PlayGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayGameViewController.h; sourceTree = "<group>"; };
+		29DDA34A1A1B8D99009E27B3 /* PlayGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayGameViewController.m; sourceTree = "<group>"; };
+		29DDA34C1A1B8DE4009E27B3 /* FinalScoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinalScoreViewController.h; sourceTree = "<group>"; };
+		29DDA34D1A1B8DE4009E27B3 /* FinalScoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinalScoreViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +103,14 @@
 				29DDA3271A1A8F78009E27B3 /* Images.xcassets */,
 				29DDA3291A1A8F78009E27B3 /* LaunchScreen.xib */,
 				29DDA31E1A1A8F78009E27B3 /* bowlingapp.xcdatamodeld */,
+				29DDA3431A1B8D2B009E27B3 /* PlayModeViewController.h */,
+				29DDA3441A1B8D2B009E27B3 /* PlayModeViewController.m */,
+				29DDA3461A1B8D6E009E27B3 /* PlayerInfoViewController.h */,
+				29DDA3471A1B8D6E009E27B3 /* PlayerInfoViewController.m */,
+				29DDA3491A1B8D99009E27B3 /* PlayGameViewController.h */,
+				29DDA34A1A1B8D99009E27B3 /* PlayGameViewController.m */,
+				29DDA34C1A1B8DE4009E27B3 /* FinalScoreViewController.h */,
+				29DDA34D1A1B8DE4009E27B3 /* FinalScoreViewController.m */,
 				29DDA3171A1A8F78009E27B3 /* Supporting Files */,
 			);
 			path = bowlingapp;
@@ -224,8 +244,12 @@
 			files = (
 				29DDA31D1A1A8F78009E27B3 /* AppDelegate.m in Sources */,
 				29DDA3201A1A8F78009E27B3 /* bowlingapp.xcdatamodeld in Sources */,
+				29DDA34E1A1B8DE4009E27B3 /* FinalScoreViewController.m in Sources */,
+				29DDA34B1A1B8D99009E27B3 /* PlayGameViewController.m in Sources */,
 				29DDA3231A1A8F78009E27B3 /* ViewController.m in Sources */,
 				29DDA31A1A1A8F78009E27B3 /* main.m in Sources */,
+				29DDA3451A1B8D2B009E27B3 /* PlayModeViewController.m in Sources */,
+				29DDA3481A1B8D6E009E27B3 /* PlayerInfoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +376,7 @@
 				INFOPLIST_FILE = bowlingapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -362,6 +387,7 @@
 				INFOPLIST_FILE = bowlingapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

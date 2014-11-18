@@ -25,6 +25,9 @@
 		A92F7A501A1BA56800E41959 /* Bowling-pins-10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A92F7A4A1A1BA56800E41959 /* Bowling-pins-10.jpg */; };
 		A92F7A511A1BA56800E41959 /* bowling_lane_layout.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A92F7A4B1A1BA56800E41959 /* bowling_lane_layout.jpg */; };
 		A92F7A521A1BA56800E41959 /* Bowling_pin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A92F7A4C1A1BA56800E41959 /* Bowling_pin.jpg */; };
+		F91AF5401A1BC49B00E394E8 /* bowlingappScoringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F91AF53F1A1BC49B00E394E8 /* bowlingappScoringTests.m */; };
+		F91AF5461A1BC71800E394E8 /* Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = F91AF5451A1BC71800E394E8 /* Frame.m */; };
+		F91AF5491A1BCA7000E394E8 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = F91AF5481A1BCA7000E394E8 /* Game.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +69,11 @@
 		A92F7A4A1A1BA56800E41959 /* Bowling-pins-10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Bowling-pins-10.jpg"; sourceTree = "<group>"; };
 		A92F7A4B1A1BA56800E41959 /* bowling_lane_layout.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bowling_lane_layout.jpg; sourceTree = "<group>"; };
 		A92F7A4C1A1BA56800E41959 /* Bowling_pin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Bowling_pin.jpg; sourceTree = "<group>"; };
+		F91AF53F1A1BC49B00E394E8 /* bowlingappScoringTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bowlingappScoringTests.m; sourceTree = "<group>"; };
+		F91AF5441A1BC71800E394E8 /* Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Frame.h; sourceTree = "<group>"; };
+		F91AF5451A1BC71800E394E8 /* Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Frame.m; sourceTree = "<group>"; };
+		F91AF5471A1BCA7000E394E8 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		F91AF5481A1BCA7000E394E8 /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +132,10 @@
 				29DDA34C1A1B8DE4009E27B3 /* FinalScoreViewController.h */,
 				29DDA34D1A1B8DE4009E27B3 /* FinalScoreViewController.m */,
 				29DDA3171A1A8F78009E27B3 /* Supporting Files */,
+				F91AF5441A1BC71800E394E8 /* Frame.h */,
+				F91AF5451A1BC71800E394E8 /* Frame.m */,
+				F91AF5471A1BCA7000E394E8 /* Game.h */,
+				F91AF5481A1BCA7000E394E8 /* Game.m */,
 			);
 			path = bowlingapp;
 			sourceTree = "<group>";
@@ -141,6 +153,7 @@
 		29DDA3331A1A8F78009E27B3 /* bowlingappTests */ = {
 			isa = PBXGroup;
 			children = (
+				F91AF53F1A1BC49B00E394E8 /* bowlingappScoringTests.m */,
 				29DDA3361A1A8F78009E27B3 /* bowlingappTests.m */,
 				29DDA3341A1A8F78009E27B3 /* Supporting Files */,
 			);
@@ -279,6 +292,8 @@
 				29DDA34E1A1B8DE4009E27B3 /* FinalScoreViewController.m in Sources */,
 				29DDA34B1A1B8D99009E27B3 /* PlayGameViewController.m in Sources */,
 				29DDA3231A1A8F78009E27B3 /* ViewController.m in Sources */,
+				F91AF5491A1BCA7000E394E8 /* Game.m in Sources */,
+				F91AF5461A1BC71800E394E8 /* Frame.m in Sources */,
 				29DDA31A1A1A8F78009E27B3 /* main.m in Sources */,
 				29DDA3451A1B8D2B009E27B3 /* PlayModeViewController.m in Sources */,
 				29DDA3481A1B8D6E009E27B3 /* PlayerInfoViewController.m in Sources */,
@@ -289,6 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F91AF5401A1BC49B00E394E8 /* bowlingappScoringTests.m in Sources */,
 				29DDA3371A1A8F78009E27B3 /* bowlingappTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

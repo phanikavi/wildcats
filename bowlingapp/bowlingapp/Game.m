@@ -13,9 +13,6 @@
 
 @property (nonatomic, strong) NSMutableArray *frames;
 @property (nonatomic, assign) NSInteger totalScore;
-@property (nonatomic, assign, getter=isStrikePending) BOOL strikePending;
-@property (nonatomic, assign, getter=isTwoStrikePending) BOOL twoStrikePending;
-@property (nonatomic, assign, getter=isSparePending) BOOL sparePending;
 
 @end
 
@@ -52,46 +49,52 @@
 
 }
 
-- (void)rollBall:(NSInteger)pins
+- (void)rollBall:(NSInteger)pins completion:(void (^)(BOOL *resetPins))completion
 {
     Frame *frameToPlay = [self.frames lastObject];
     if (frameToPlay.firstBall < 0) {
         frameToPlay.firstBall = pins;
 
-        // tell ui something, keep going?
-        if ([self isSparePending]) {
-            //go back one and score frame
-            self.sparePending = NO;
-        } else if ([self isTwoStrikePending]) {
-            // go back and score two frames back
-            self.twoStrikePending = NO;
-            self.strikePending = YES;
-        }
         if (pins == 10) {
             //tell ui to put pins up
             //tel ui to draw strike on second ball square?
-            Frame *newFrame = [[Frame alloc] init];
-            [self.frames addObject:newFrame];
-            if ([self isStrikePending]) {
-                self.twoStrikePending = YES;
-            } else {
-                self.strikePending = YES;
-            }
+            frameToPlay.strike = YES;
+            frameToPlay.scorePending = YES;
         }
-        
-        return;
+
     } else {
         frameToPlay.secondBall = pins;
         if ((frameToPlay.firstBall + frameToPlay.secondBall) == 10) {
-            //tell ui spare?
-            self.sparePending = YES;
+            frameToPlay.spare = YES;
+            frameToPlay.scorePending = YES;
         } else {
-            [self setFrameScore:(frameToPlay.firstBall + frameToPlay.secondBall) inFrame:[self.frames indexOfObject:frameToPlay]];
+            // add previous + firstball + secondball
+            //[self setFrameScore:(frameToPlay.firstBall + frameToPlay.secondBall) inFrame:[self.frames indexOfObject:frameToPlay]];
         }
-        // Frame *newFrame = [[Frame alloc] init];
-        // [self.frames addObject:newFrame];
+
     }
 
+
+
+    if (self.frames.count > 1) {
+        Frame *previousFrame = [self.frames objectAtIndex:([self.frames indexOfObject:[self.frames lastObject]]-1)];
+
+    }
+    Frame *newFrame = [[Frame alloc] init];
+    [self.frames addObject:newFrame];
+
+
+
+
+}
+
+- (void) writeScoreInFrames:(Frame *)inProgressFrame
+{
+    if (self.frames.count == 1) {
+        if (![inProgressFrame isScorePending]) {
+            [self setFrameScore:(inProgressFrame.firstBall + inProgressFrame.secondBall) inFrame:[self.frames indexOfObject:inProgressFrame]];
+        }
+    }
 
 }
 

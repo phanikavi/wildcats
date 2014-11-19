@@ -13,5 +13,9 @@
 @property (nonatomic, assign) NSInteger firstBall;
 @property (nonatomic, assign) NSInteger secondBall;
 @property (nonatomic, assign) NSInteger score;
+@property (nonatomic, assign, getter=isScorePending) BOOL scorePending;
+@property (nonatomic, assign, getter=isSpare) BOOL spare;
+@property (nonatomic, assign, getter=isStrike) BOOL strike;
+
 
 @end

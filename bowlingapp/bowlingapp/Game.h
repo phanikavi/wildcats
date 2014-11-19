@@ -12,7 +12,7 @@
 
 
 - (void)playGame;
-- (void)rollBall:(NSInteger)pins;
+- (void)rollBall:(NSInteger)pins completion:(void (^)(BOOL *resetPins))completion;
 - (NSInteger)calculateTotal;
 
 @end

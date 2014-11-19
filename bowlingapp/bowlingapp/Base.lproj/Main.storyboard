@@ -83,10 +83,6 @@
                                 <rect key="frame" x="119" y="194" width="52" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bowling-pin-single-2.jpg" id="JLs-kW-R16">
-                                <rect key="frame" x="308" y="546" width="52" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="sdM-2d-QFn">
                                 <rect key="frame" x="111" y="441" width="68" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -97,11 +93,26 @@
                                     <action selector="onBowlingBowlSpin:" destination="Z3K-bf-3d0" eventType="touchUpInside" id="6mg-Qz-sBB"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SCORE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NhG-HH-ywB">
+                                <rect key="frame" x="245" y="83" width="59" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Eob-cL-A2b">
+                                <rect key="frame" x="269" y="112" width="10" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Fwk-Sf-H3W"/>
                     <connections>
+                        <outlet property="currentScore" destination="Eob-cL-A2b" id="Hvi-di-Eya"/>
                         <outlet property="pin1" destination="0rL-1B-kBf" id="O0F-vL-Nww"/>
                         <outlet property="pin10" destination="y4a-Sx-evJ" id="Jxz-3Q-lfw"/>
                         <outlet property="pin2" destination="WSx-Ek-0QC" id="D6D-Hs-g3S"/>

@@ -21,7 +21,9 @@
 @property (weak, nonatomic) IBOutlet UIImageView *pin9;
 @property (weak, nonatomic) IBOutlet UIImageView *pin10;
 @property (strong, nonatomic) NSArray *listOfpins;
-
+@property (weak, nonatomic) IBOutlet UILabel *currentScore;
+@property (nonatomic) int state;
+@property (nonatomic) int sumFromSpin1;
 @end
 
 @implementation PlayGameViewController
@@ -29,6 +31,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.listOfpins = @[self.pin1, self.pin2, self.pin3, self.pin4, self.pin5, self.pin6, self.pin7, self.pin8, self.pin9, self.pin10];
+    self.state = 0;
+    self.currentScore.text = @"0";
     // Do any additional setup after loading the view.
 }
 
@@ -51,13 +55,34 @@
 {
     int randomnumber = arc4random() % 10;
     NSLog(@"random number is %d", randomnumber);
-
-    for (int i=0;i<randomnumber;i++)
+    int frameScore;
+    if (self.state == 0)
     {
-        UIImageView *tmpView = self.listOfpins[i];
-        tmpView.hidden = true;
+        for (int i=0;i<randomnumber;i++)
+        {
+            UIImageView *tmpView = self.listOfpins[i];
+            tmpView.hidden = true;
+        }
+        self.sumFromSpin1 = randomnumber;
+        self.state = 1;
+    }
+    else if (self.state == 1)
+    {
+        for (int i=self.sumFromSpin1;i < 10 && i < self.sumFromSpin1 + randomnumber;i++)
+        {
+            UIImageView *tmpView = self.listOfpins[i];
+            tmpView.hidden = true;
+        }
+        self.state = 0;
+        frameScore = (self.sumFromSpin1 + randomnumber) > 10 ? 10 : (self.sumFromSpin1 + randomnumber);
+
+        //
+        frameScore += [self.currentScore.text intValue];
+
+        self.currentScore.text = [NSString stringWithFormat:@"%d", frameScore];
+
     }
 
-    
+
 }
 @end

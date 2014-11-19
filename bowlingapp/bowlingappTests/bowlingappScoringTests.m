@@ -17,12 +17,30 @@
 @implementation bowlingappScoringTests
 
 - (void)testTotalScore {
-    NSInteger myTestTotal = 9;
+    NSInteger myTestTotal = 90;
 
     Game *aGame = [[Game alloc] init];
     [aGame playGame];
     [aGame rollBall:5];
     [aGame rollBall:4];
+    [aGame rollBall:6];
+    [aGame rollBall:3];
+    [aGame rollBall:9];
+    [aGame rollBall:0];
+    [aGame rollBall:8];
+    [aGame rollBall:1];
+    [aGame rollBall:9];
+    [aGame rollBall:0];
+    [aGame rollBall:9];
+    [aGame rollBall:0];
+    [aGame rollBall:9];
+    [aGame rollBall:0];
+    [aGame rollBall:9];
+    [aGame rollBall:0];
+    [aGame rollBall:9];
+    [aGame rollBall:0];
+    [aGame rollBall:9];
+    [aGame rollBall:0];
 
     XCTAssertEqual([aGame calculateTotal], myTestTotal);
 }

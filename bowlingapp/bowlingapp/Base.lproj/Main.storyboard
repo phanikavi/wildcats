@@ -1,250 +1,146 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="umx-ZC-hvi">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="umx-ZC-hvi">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Play Mode View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="PlayModeViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6sI-fD-FS6">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bowling-pins-10.jpg" id="Thw-uy-JCc">
+                                <rect key="frame" x="48" y="65" width="225" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6sI-fD-FS6">
+                                <rect key="frame" x="59" y="237" width="203" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Single Player Play Game">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="3ky-qH-LWr" kind="show" id="nqt-Y7-Pc4"/>
+                                    <segue destination="Z3K-bf-3d0" kind="push" id="ZUE-tN-yqv"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bowling-pins-10.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Thw-uy-JCc">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="WNY-bm-CXP"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="WNY-bm-CXP"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular">
-                                    <mask key="constraints">
-                                        <include reference="WNY-bm-CXP"/>
-                                    </mask>
-                                </variation>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="Thw-uy-JCc" secondAttribute="trailing" constant="164" id="2WF-sp-M7n"/>
-                            <constraint firstAttribute="centerY" secondItem="6sI-fD-FS6" secondAttribute="centerY" id="Ghr-3l-eyt"/>
-                            <constraint firstItem="Thw-uy-JCc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="55" id="RL8-KL-UXz"/>
-                            <constraint firstItem="Thw-uy-JCc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="164" id="o6e-ah-3Uz"/>
-                            <constraint firstAttribute="centerX" secondItem="6sI-fD-FS6" secondAttribute="centerX" id="vc5-B1-fG4"/>
-                        </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="6sI-fD-FS6"/>
-                                <exclude reference="Thw-uy-JCc"/>
-                            </mask>
-                            <mask key="constraints">
-                                <exclude reference="2WF-sp-M7n"/>
-                                <exclude reference="RL8-KL-UXz"/>
-                                <exclude reference="o6e-ah-3Uz"/>
-                                <exclude reference="Ghr-3l-eyt"/>
-                                <exclude reference="vc5-B1-fG4"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=regular">
-                            <mask key="subviews">
-                                <include reference="6sI-fD-FS6"/>
-                                <include reference="Thw-uy-JCc"/>
-                            </mask>
-                            <mask key="constraints">
-                                <include reference="2WF-sp-M7n"/>
-                                <include reference="RL8-KL-UXz"/>
-                                <include reference="o6e-ah-3Uz"/>
-                                <include reference="Ghr-3l-eyt"/>
-                                <include reference="vc5-B1-fG4"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="jHW-pE-g1w"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="720" y="134.25"/>
+            <point key="canvasLocation" x="381" y="125"/>
         </scene>
-        <!--Player Info View Controller-->
-        <scene sceneID="2hT-0d-qcP">
-            <objects>
-                <viewController id="3ky-qH-LWr" customClass="PlayerInfoViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Kgh-eD-7GQ"/>
-                        <viewControllerLayoutGuide type="bottom" id="eBG-k0-MKU"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="0Am-em-D9M">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Player Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NXU-jr-zyt">
-                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="finishedEnteringName:" destination="3ky-qH-LWr" eventType="editingDidEnd" id="M0V-mI-GZ3"/>
-                                </connections>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bgg-LM-c7E">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Start Game">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Z3K-bf-3d0" kind="show" id="y2r-Of-I3f"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="NXU-jr-zyt" secondAttribute="trailing" constant="80" id="KQs-Im-kBX"/>
-                            <constraint firstItem="NXU-jr-zyt" firstAttribute="leading" secondItem="0Am-em-D9M" secondAttribute="leadingMargin" constant="81" id="eo1-ga-6ws"/>
-                            <constraint firstItem="NXU-jr-zyt" firstAttribute="top" secondItem="Kgh-eD-7GQ" secondAttribute="bottom" constant="181" id="fJ8-dc-3MM"/>
-                            <constraint firstItem="Bgg-LM-c7E" firstAttribute="centerX" secondItem="NXU-jr-zyt" secondAttribute="centerX" id="gKE-I5-OJu"/>
-                            <constraint firstItem="Bgg-LM-c7E" firstAttribute="top" secondItem="NXU-jr-zyt" secondAttribute="bottom" constant="222" id="hCS-6z-Ho8"/>
-                        </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="NXU-jr-zyt"/>
-                                <exclude reference="Bgg-LM-c7E"/>
-                            </mask>
-                            <mask key="constraints">
-                                <exclude reference="KQs-Im-kBX"/>
-                                <exclude reference="eo1-ga-6ws"/>
-                                <exclude reference="fJ8-dc-3MM"/>
-                                <exclude reference="gKE-I5-OJu"/>
-                                <exclude reference="hCS-6z-Ho8"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=regular">
-                            <mask key="subviews">
-                                <include reference="NXU-jr-zyt"/>
-                                <include reference="Bgg-LM-c7E"/>
-                            </mask>
-                            <mask key="constraints">
-                                <include reference="KQs-Im-kBX"/>
-                                <include reference="eo1-ga-6ws"/>
-                                <include reference="fJ8-dc-3MM"/>
-                                <include reference="gKE-I5-OJu"/>
-                                <include reference="hCS-6z-Ho8"/>
-                            </mask>
-                        </variation>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bzm-Qi-cFd" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1446" y="134.25"/>
-        </scene>
-        <!--Play Mode View Controller-->
+        <!--Play Game View Controller-->
         <scene sceneID="s5t-MN-JHg">
             <objects>
-                <viewController id="Z3K-bf-3d0" customClass="PlayModeViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="yvM-ux-rxi"/>
-                        <viewControllerLayoutGuide type="bottom" id="xiX-FC-13B"/>
-                    </layoutGuides>
+                <viewController id="Z3K-bf-3d0" customClass="PlayGameViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eBe-6D-fBW">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Play Game" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TTF-Nx-Vzn">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="279" y="251" width="84" height="21"/>
-                                </variation>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qCu-S7-1Yl">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Game Over">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bowling-pin-single-2.jpg" id="0rL-1B-kBf">
+                                <rect key="frame" x="55" y="72" width="52" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bowling-pin-single-2.jpg" id="WSx-Ek-0QC">
+                                <rect key="frame" x="96" y="72" width="52" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bowling-pin-single-2.jpg" id="oOI-Lc-xZH">
+                                <rect key="frame" x="135" y="72" width="52" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bowling-pin-single-2.jpg" id="hUw-no-WkN">
+                                <rect key="frame" x="176" y="72" width="52" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bowling-pin-single-2.jpg" id="lSj-7s-z0e">
+                                <rect key="frame" x="75" y="115" width="52" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bowling-pin-single-2.jpg" id="tla-D5-I8b">
+                                <rect key="frame" x="114" y="115" width="52" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bowling-pin-single-2.jpg" id="O2g-gN-Mnd">
+                                <rect key="frame" x="96" y="155" width="52" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bowling-pin-single-2.jpg" id="yGW-sj-7iN">
+                                <rect key="frame" x="135" y="155" width="52" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bowling-pin-single-2.jpg" id="68V-Ew-Nrx">
+                                <rect key="frame" x="155" y="115" width="52" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bowling-pin-single-2.jpg" id="y4a-Sx-evJ">
+                                <rect key="frame" x="119" y="194" width="52" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bowling-pin-single-2.jpg" id="JLs-kW-R16">
+                                <rect key="frame" x="308" y="546" width="52" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="sdM-2d-QFn">
+                                <rect key="frame" x="111" y="441" width="68" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Blue_bowling_ball.jpg">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="298" y="536" width="78" height="30"/>
-                                </variation>
                                 <connections>
-                                    <segue destination="p83-Ah-GVp" kind="show" id="puM-1l-ZFk"/>
+                                    <action selector="onBowlingBowlSpin:" destination="Z3K-bf-3d0" eventType="touchUpInside" id="6mg-Qz-sBB"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="TTF-Nx-Vzn"/>
-                                <exclude reference="qCu-S7-1Yl"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=regular">
-                            <mask key="subviews">
-                                <include reference="TTF-Nx-Vzn"/>
-                                <include reference="qCu-S7-1Yl"/>
-                            </mask>
-                        </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="Fwk-Sf-H3W"/>
+                    <connections>
+                        <outlet property="pin1" destination="0rL-1B-kBf" id="O0F-vL-Nww"/>
+                        <outlet property="pin10" destination="y4a-Sx-evJ" id="Jxz-3Q-lfw"/>
+                        <outlet property="pin2" destination="WSx-Ek-0QC" id="D6D-Hs-g3S"/>
+                        <outlet property="pin3" destination="oOI-Lc-xZH" id="U7e-Sc-6de"/>
+                        <outlet property="pin4" destination="hUw-no-WkN" id="2Yk-8d-POp"/>
+                        <outlet property="pin5" destination="lSj-7s-z0e" id="DEe-XV-Qes"/>
+                        <outlet property="pin6" destination="tla-D5-I8b" id="Tfo-rU-1tT"/>
+                        <outlet property="pin7" destination="68V-Ew-Nrx" id="ixI-1l-2Ne"/>
+                        <outlet property="pin8" destination="O2g-gN-Mnd" id="XFz-hR-ySO"/>
+                        <outlet property="pin9" destination="yGW-sj-7iN" id="fGO-nD-LlR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KJP-Hy-pBd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2076" y="133.5"/>
+            <point key="canvasLocation" x="831" y="127"/>
         </scene>
         <!--Final Score View Controller-->
         <scene sceneID="rHW-j3-oVq">
             <objects>
                 <viewController id="p83-Ah-GVp" customClass="FinalScoreViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ZgB-hu-q6Q"/>
-                        <viewControllerLayoutGuide type="bottom" id="Xuw-Nn-A5K"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="R8l-t0-rC1">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End Game" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VEk-6t-eMX">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End Game" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VEk-6t-eMX">
+                                <rect key="frame" x="279" y="283" width="81" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="279" y="283" width="81" height="21"/>
-                                </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="VEk-6t-eMX"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=regular">
-                            <mask key="subviews">
-                                <include reference="VEk-6t-eMX"/>
-                            </mask>
-                        </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="0HS-La-SpH"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0az-SU-3zS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2708" y="128.25"/>
+            <point key="canvasLocation" x="1444.2666666666667" y="121.41"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="seJ-Fn-FVX">
@@ -262,10 +158,17 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W2D-ff-5kU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-92" y="134.25"/>
+            <point key="canvasLocation" x="-49.066666666666663" y="127.09"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Blue_bowling_ball.jpg" width="500" height="490"/>
+        <image name="Bowling-pin-single-2.jpg" width="194" height="260"/>
         <image name="Bowling-pins-10.jpg" width="225" height="225"/>
     </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
 </document>

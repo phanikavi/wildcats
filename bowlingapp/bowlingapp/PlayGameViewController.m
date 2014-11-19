@@ -9,6 +9,18 @@
 #import "PlayGameViewController.h"
 
 @interface PlayGameViewController ()
+- (IBAction)onBowlingBowlSpin:(id)sender;
+@property (weak, nonatomic) IBOutlet UIImageView *pin1;
+@property (weak, nonatomic) IBOutlet UIImageView *pin2;
+@property (weak, nonatomic) IBOutlet UIImageView *pin3;
+@property (weak, nonatomic) IBOutlet UIImageView *pin4;
+@property (weak, nonatomic) IBOutlet UIImageView *pin5;
+@property (weak, nonatomic) IBOutlet UIImageView *pin6;
+@property (weak, nonatomic) IBOutlet UIImageView *pin7;
+@property (weak, nonatomic) IBOutlet UIImageView *pin8;
+@property (weak, nonatomic) IBOutlet UIImageView *pin9;
+@property (weak, nonatomic) IBOutlet UIImageView *pin10;
+@property (strong, nonatomic) NSArray *listOfpins;
 
 @end
 
@@ -16,6 +28,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.listOfpins = @[self.pin1, self.pin2, self.pin3, self.pin4, self.pin5, self.pin6, self.pin7, self.pin8, self.pin9, self.pin10];
     // Do any additional setup after loading the view.
 }
 
@@ -34,4 +47,17 @@
 }
 */
 
+- (IBAction)onBowlingBowlSpin:(id)sender
+{
+    int randomnumber = arc4random() % 10;
+    NSLog(@"random number is %d", randomnumber);
+
+    for (int i=0;i<randomnumber;i++)
+    {
+        UIImageView *tmpView = self.listOfpins[i];
+        tmpView.hidden = true;
+    }
+
+    
+}
 @end

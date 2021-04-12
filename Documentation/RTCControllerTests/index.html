@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RealtimeSDK - RTCControllerTests</title>
+    <link rel="stylesheet" type="text/css" href="Documentation/all.css" media="all" />
+</head>
+<body>
+    <header>
+        <a href="Documentation">
+            <strong>
+                RealtimeSDK
+            </strong>
+            <span>Documentation</span>
+        </a>
+        <sup>Beta</sup>
+    </header>
+
+    <!--
+    <form class="search">
+        <input type="search" placeholder="Search" />
+    </form>
+    -->
+
+    <nav>
+        <div class="wrapper">
+            <h2>On This Page</h2>
+            <ol><li><a href="#initializers">Initializers</a><ul><li class="initializer"><a href="#rtccontrollertests.init(_:)">init(_:​)</a></li></ul></li><li><a href="#properties">Properties</a><ul><li class="variable"><a href="#rtccontrollertests.delegate">delegate</a></li><li class="variable"><a href="#rtccontrollertests.video">video</a></li></ul></li><li><a href="#methods">Methods</a><ul><li class="function"><a href="#rtccontrollertests.setupconnection(token:)">setup​Connection(token:​)</a></li><li class="function"><a href="#rtccontrollertests.joinroom()">join​Room()</a></li><li class="function"><a href="#rtccontrollertests.leaveroom()">leave​Room()</a></li><li class="function"><a href="#rtccontrollertests.setmutestatus(status:)">set​Mute​Status(status:​)</a></li><li class="function"><a href="#rtccontrollertests.switchcamera()">switch​Camera()</a></li><li class="function"><a href="#rtccontrollertests.setvideoenabled(status:)">set​Video​Enabled(status:​)</a></li><li class="function"><a href="#rtccontrollertests.setvideoview(_:_:)">set​Video​View(_:​_:​)</a></li></ul></li></ol>
+        </div>
+    </nav>
+
+    <main>
+        <article>
+            <h1>
+    <small>Class</small>
+    <code class="name">RTCController​Tests</code>
+</h1>
+
+<html><body><pre class="highlight"><code><span class="keyword">public</span> <span class="keyword">class</span> <span class="type">RTCControllerTests</span></code></pre></body></html>
+
+    <section id="initializers">
+        <h2>Initializers</h2>
+
+        <div role="article" class="initializer" id="rtccontrollertests.init(_:)">
+    <h3>
+        <code>init(_:​)</code>
+    </h3>
+    <html><body><pre class="highlight"><code><span class="keyword">public</span> <span class="keyword">init</span>(<span class="keyword">_</span> <span class="variable">delegate</span>: <a href="Documentation/ConnectionStatus"><span class="type">ConnectionStatus</span></a>)</code></pre></body></html>
+</div>
+    </section>
+    <section id="properties">
+        <h2>Properties</h2>
+
+        <div role="article" class="variable" id="rtccontrollertests.delegate">
+    <h3>
+        <code>delegate</code>
+    </h3>
+    <html><body><pre class="highlight"><code><span class="keyword">var</span> <span class="variable">delegate</span>: <a href="Documentation/ConnectionStatus"><span class="type">ConnectionStatus</span></a>?</code></pre></body></html>
+</div>
+<div role="article" class="variable" id="rtccontrollertests.video">
+    <h3>
+        <code>video</code>
+    </h3>
+    <html><body><pre class="highlight"><code><span class="keyword">var</span> <span class="variable">video</span> = <span class="keyword">false</span></code></pre></body></html>
+</div>
+    </section>
+    <section id="methods">
+        <h2>Methods</h2>
+
+        <div role="article" class="function" id="rtccontrollertests.setupconnection(token:)">
+    <h3>
+        <code>setup​Connection(token:​)</code>
+    </h3>
+    <html><body><pre class="highlight"><code><span class="keyword">public</span> <span class="keyword">func</span> <span class="function">setupConnection</span>(<span class="variable">token</span>: <span class="type">String</span>)</code></pre></body></html>
+</div>
+<div role="article" class="function" id="rtccontrollertests.joinroom()">
+    <h3>
+        <code>join​Room()</code>
+    </h3>
+    <html><body><pre class="highlight"><code><span class="keyword">public</span> <span class="keyword">func</span> <span class="function">joinRoom</span>()</code></pre></body></html>
+</div>
+<div role="article" class="function" id="rtccontrollertests.leaveroom()">
+    <h3>
+        <code>leave​Room()</code>
+    </h3>
+    <html><body><pre class="highlight"><code><span class="keyword">public</span> <span class="keyword">func</span> <span class="function">leaveRoom</span>()</code></pre></body></html>
+</div>
+<div role="article" class="function" id="rtccontrollertests.setmutestatus(status:)">
+    <h3>
+        <code>set​Mute​Status(status:​)</code>
+    </h3>
+    <html><body><pre class="highlight"><code><span class="keyword">public</span> <span class="keyword">func</span> <span class="function">setMuteStatus</span>(<span class="variable">status</span>: <span class="type">Bool</span>)</code></pre></body></html>
+</div>
+<div role="article" class="function" id="rtccontrollertests.switchcamera()">
+    <h3>
+        <code>switch​Camera()</code>
+    </h3>
+    <html><body><pre class="highlight"><code><span class="keyword">public</span> <span class="keyword">func</span> <span class="function">switchCamera</span>()</code></pre></body></html>
+</div>
+<div role="article" class="function" id="rtccontrollertests.setvideoenabled(status:)">
+    <h3>
+        <code>set​Video​Enabled(status:​)</code>
+    </h3>
+    <html><body><pre class="highlight"><code><span class="keyword">public</span> <span class="keyword">func</span> <span class="function">setVideoEnabled</span>(<span class="variable">status</span>: <span class="type">Bool</span>)</code></pre></body></html>
+</div>
+<div role="article" class="function" id="rtccontrollertests.setvideoview(_:_:)">
+    <h3>
+        <code>set​Video​View(_:​_:​)</code>
+    </h3>
+    <html><body><pre class="highlight"><code><span class="keyword">public</span> <span class="keyword">func</span> <span class="function">setVideoView</span>(<span class="keyword">_</span> <span class="variable">view</span>: <span class="type">UIView</span>?, <span class="keyword">_</span> <span class="variable">local</span>: <span class="type">Bool</span>)</code></pre></body></html>
+</div>
+    </section>
+
+
+
+        </article>
+    </main>
+
+    <footer>
+        <p>
+    Generated on <time datetime="2021-04-12T14:06:05-0400">April 12, 2021</time> using <a href="https://github.com/SwiftDocOrg/swift-doc">swift-doc</a> <span class="version">1.0.0-beta.5</span>.
+</p>
+    </footer>
+</body>
+</html>

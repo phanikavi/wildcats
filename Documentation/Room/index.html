@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RealtimeSDK - Room</title>
+    <link rel="stylesheet" type="text/css" href="Documentation/all.css" media="all" />
+</head>
+<body>
+    <header>
+        <a href="Documentation">
+            <strong>
+                RealtimeSDK
+            </strong>
+            <span>Documentation</span>
+        </a>
+        <sup>Beta</sup>
+    </header>
+
+    <!--
+    <form class="search">
+        <input type="search" placeholder="Search" />
+    </form>
+    -->
+
+    <nav>
+        <div class="wrapper">
+            <h2>On This Page</h2>
+            <ol><li><a href="#properties">Properties</a><ul><li class="variable"><a href="#room.sdkdelegate">sdk​Delegate</a></li><li class="variable"><a href="#room.name">name</a></li><li class="variable"><a href="#room.roomid">room​Id</a></li></ul></li><li><a href="#methods">Methods</a><ul><li class="function"><a href="#room.localparticipant()">local​Participant()</a></li><li class="function"><a href="#room.remoteparticipants()">remote​Participants()</a></li><li class="function"><a href="#room.camerafacingmode()">camera​Facing​Mode()</a></li><li class="function"><a href="#room.togglemute()">toggle​Mute()</a></li><li class="function"><a href="#room.togglevideo(completionhandler:)">toggle​Video(completion​Handler:​)</a></li><li class="function"><a href="#room.switchcamera()">switch​Camera()</a></li><li class="function"><a href="#room.replacevideostream(stream:)">replace​Video​Stream(stream:​)</a></li><li class="function"><a href="#room.hasvideo()">has​Video()</a></li><li class="function"><a href="#room.ismuted()">is​Muted()</a></li><li class="function"><a href="#room.leave()">leave()</a></li></ul></li></ol>
+        </div>
+    </nav>
+
+    <main>
+        <article>
+            <h1>
+    <small>Class</small>
+    <code class="name">Room</code>
+</h1>
+
+<html><body><pre class="highlight"><code><span class="keyword">public</span> <span class="keyword">class</span> <span class="type">Room</span></code></pre></body></html>
+
+    <section id="properties">
+        <h2>Properties</h2>
+
+        <div role="article" class="variable" id="room.sdkdelegate">
+    <h3>
+        <code>sdk​Delegate</code>
+    </h3>
+    <html><body><pre class="highlight"><code><span class="keyword">var</span> <span class="variable">sdkDelegate</span>: <a href="Documentation/RealtimeSDKDelegate"><span class="type">RealtimeSDKDelegate</span></a>?</code></pre></body></html>
+</div>
+<div role="article" class="variable" id="room.name">
+    <h3>
+        <code>name</code>
+    </h3>
+    <html><body><pre class="highlight"><code><span class="keyword">var</span> <span class="variable">name</span>: <span class="type">String</span>?</code></pre></body></html>
+</div>
+<div role="article" class="variable" id="room.roomid">
+    <h3>
+        <code>room​Id</code>
+    </h3>
+    <html><body><pre class="highlight"><code><span class="keyword">var</span> <span class="variable">roomId</span>: <span class="type">String</span>?</code></pre></body></html>
+</div>
+    </section>
+    <section id="methods">
+        <h2>Methods</h2>
+
+        <div role="article" class="function" id="room.localparticipant()">
+    <h3>
+        <code>local​Participant()</code>
+    </h3>
+    <html><body><pre class="highlight"><code><span class="keyword">public</span> <span class="keyword">func</span> <span class="function">localParticipant</span>() -&gt; <a href="Documentation/LocalParticipant"><span class="type">LocalParticipant</span></a>?</code></pre></body></html>
+<div class="discussion">
+    <ul>
+<li>
+<p>Local participant.</p>
+</li>
+<li></li>
+<li>
+<p>@readonly</p>
+</li>
+<li>
+<p>@returns {LocalParticipant} Local participant.</p>
+</li>
+</ul>
+
+</div>
+</div>
+<div role="article" class="function" id="room.remoteparticipants()">
+    <h3>
+        <code>remote​Participants()</code>
+    </h3>
+    <html><body><pre class="highlight"><code><span class="keyword">public</span> <span class="keyword">func</span> <span class="function">remoteParticipants</span>() -&gt; [<a href="Documentation/RemoteParticipant"><span class="type">RemoteParticipant</span></a>]?</code></pre></body></html>
+<div class="discussion">
+    <ul>
+<li>
+<p>Remote participants.</p>
+</li>
+<li></li>
+<li>
+<p>@readonly</p>
+</li>
+<li>
+<p>@returns {RemoteParticipant[]} Array of remote participants.</p>
+</li>
+</ul>
+
+</div>
+</div>
+<div role="article" class="function" id="room.camerafacingmode()">
+    <h3>
+        <code>camera​Facing​Mode()</code>
+    </h3>
+    <html><body><pre class="highlight"><code><span class="keyword">public</span> <span class="keyword">func</span> <span class="function">cameraFacingMode</span>() -&gt; <span class="type">String</span></code></pre></body></html>
+<div class="discussion">
+    <ul>
+<li>
+<p>Camera facing mode. Change mode via {@link Room#switchCamera}.</p>
+</li>
+<li></li>
+<li>
+<p>@readonly</p>
+</li>
+<li>
+<p>@returns {string} 'environment' or 'user'.</p>
+</li>
+</ul>
+
+</div>
+</div>
+<div role="article" class="function" id="room.togglemute()">
+    <h3>
+        <code>toggle​Mute()</code>
+    </h3>
+    <html><body><pre class="highlight"><code><span class="keyword">public</span> <span class="keyword">func</span> <span class="function">toggleMute</span>() -&gt; <span class="type">Bool</span></code></pre></body></html>
+<div class="discussion">
+    <ul>
+<li>
+<p>Mute/unmute preferred audio input device.</p>
+</li>
+<li></li>
+<li>
+<p>@returns {boolean} True if muted.</p>
+</li>
+<li>
+<p>@example</p>
+</li>
+<li>
+<p>room.toggleMute();</p>
+</li>
+<li>
+<p>const muted = room.isMuted();</p>
+</li>
+</ul>
+
+</div>
+</div>
+<div role="article" class="function" id="room.togglevideo(completionhandler:)">
+    <h3>
+        <code>toggle​Video(completion​Handler:​)</code>
+    </h3>
+    <html><body><pre class="highlight"><code><span class="keyword">public</span> <span class="keyword">func</span> <span class="function">toggleVideo</span>(<span class="variable">completionHandler</span>: (<span class="type">Error</span>?) -&gt; <span class="type">Void</span>)</code></pre></body></html>
+<div class="discussion">
+    <ul>
+<li>
+<p>Toggle sending local video.</p>
+</li>
+<li></li>
+<li>
+<p>@returns {Promise<boolean>} True if sending video.</p>
+</li>
+<li>
+<p>@example</p>
+</li>
+<li>
+<p>const hasVideo = await room.toggleVideo();</p>
+</li>
+</ul>
+
+</div>
+</div>
+<div role="article" class="function" id="room.switchcamera()">
+    <h3>
+        <code>switch​Camera()</code>
+    </h3>
+    <html><body><pre class="highlight"><code><span class="keyword">public</span> <span class="keyword">func</span> <span class="function">switchCamera</span>()</code></pre></body></html>
+<div class="discussion">
+    <ul>
+<li>
+<p>Switch the camera on a mobile device between 'environment' and 'user'.</p>
+</li>
+<li></li>
+<li>
+<p>@returns {Promise} Resolved when operation is completed.</p>
+</li>
+</ul>
+
+</div>
+</div>
+<div role="article" class="function" id="room.replacevideostream(stream:)">
+    <h3>
+        <code>replace​Video​Stream(stream:​)</code>
+    </h3>
+    <html><body><pre class="highlight"><code><span class="keyword">public</span> <span class="keyword">func</span> <span class="function">replaceVideoStream</span>(<span class="variable">stream</span>: <span class="keyword">Any</span>?)</code></pre></body></html>
+<div class="discussion">
+    <ul>
+<li>
+<p>Replace the sending video stream.</p>
+</li>
+<li></li>
+<li>
+<p>@param {MediaStream} [stream] - The new MediaStream. If not set, fallback to local stream.</p>
+</li>
+<li>
+<p>@example</p>
+</li>
+<li>
+<p>const stream = await navigator.mediaDevices.getUserMedia({ video: true });</p>
+</li>
+<li>
+<p>const room = await room.replaceVideoStream(stream);</p>
+</li>
+</ul>
+
+</div>
+</div>
+<div role="article" class="function" id="room.hasvideo()">
+    <h3>
+        <code>has​Video()</code>
+    </h3>
+    <html><body><pre class="highlight"><code><span class="keyword">public</span> <span class="keyword">func</span> <span class="function">hasVideo</span>() -&gt; <span class="type">Bool</span></code></pre></body></html>
+<div class="discussion">
+    <ul>
+<li>
+<p>Check if user is sending video.</p>
+</li>
+<li></li>
+<li>
+<p>@returns {boolean} True if sending video.</p>
+</li>
+</ul>
+
+</div>
+</div>
+<div role="article" class="function" id="room.ismuted()">
+    <h3>
+        <code>is​Muted()</code>
+    </h3>
+    <html><body><pre class="highlight"><code><span class="keyword">public</span> <span class="keyword">func</span> <span class="function">isMuted</span>() -&gt; <span class="type">Bool</span></code></pre></body></html>
+<div class="discussion">
+    <ul>
+<li>
+<p>Check if user is muted.</p>
+</li>
+<li></li>
+<li>
+<p>@returns {boolean} True if muted.</p>
+</li>
+</ul>
+
+</div>
+</div>
+<div role="article" class="function" id="room.leave()">
+    <h3>
+        <code>leave()</code>
+    </h3>
+    <html><body><pre class="highlight"><code><span class="keyword">public</span> <span class="keyword">func</span> <span class="function">leave</span>()</code></pre></body></html>
+<div class="discussion">
+    <ul>
+<li>
+<p>Leave the room.</p>
+</li>
+</ul>
+
+</div>
+</div>
+    </section>
+
+
+
+        </article>
+    </main>
+
+    <footer>
+        <p>
+    Generated on <time datetime="2021-04-12T14:06:05-0400">April 12, 2021</time> using <a href="https://github.com/SwiftDocOrg/swift-doc">swift-doc</a> <span class="version">1.0.0-beta.5</span>.
+</p>
+    </footer>
+</body>
+</html>
